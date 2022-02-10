@@ -13,7 +13,7 @@ function started() {
     target.style.visibility='visible';
     document.querySelector('.score').innerHTML = `Score: ${score}`;
     document.querySelector('.score').style.visibility="visible";
-    interval = setInterval(game, 250);
+    interval = setInterval(game, 500);
     setTimeout(stop, 30000);
 }
 
@@ -21,7 +21,7 @@ function stop() {
     clearInterval(interval);
     target.style.visibility='hidden';
     again.style.visibility="visible";
-    again.innerHTML = `Ти набрав ${(score == 1 || score == 0) ? 'ціле очко' : score}, ${(score <100) ? 'до Боді тобі ше далеко' : 'привіт, Богдане'}, граєм ше?)`;
+    again.innerHTML = `Ти набрав ${(score == 1 || score == 0) ? 'ціле очко' : score}, ${(score <40) ? 'до Боді тобі ше далеко' : 'привіт, Богдане'}, граєм ше?)`;
 }
 
 function clicked() {
