@@ -13,8 +13,8 @@ function started() {
     target.style.visibility='visible';
     document.querySelector('.score').innerHTML = `Score: ${score}`;
     document.querySelector('.score').style.visibility="visible";
-    interval = setInterval(game, 1000);
-    setTimeout(stop, 10000);
+    interval = setInterval(game, 250);
+    setTimeout(stop, 30000);
 }
 
 function stop() {
