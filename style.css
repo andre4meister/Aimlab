@@ -26,6 +26,7 @@
     background-color: black;
     border-radius: 5px;
     border: 5px solid darkslateblue;
+    cursor: crosshair;
 }
 .target {
     display: block;
@@ -37,6 +38,7 @@
     position:relative;
     top: 500px;
     left: 0px;
+    cursor: crosshair;
 }
 .again-btn {
   display: flex;
