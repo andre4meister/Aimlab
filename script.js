@@ -21,7 +21,7 @@ function stop() {
     clearInterval(interval);
     target.style.visibility='hidden';
     again.style.visibility="visible";
-    again.innerHTML = `Ти набрав ${(score == 1 || score == 0) ? 'ціле очко' : score}, ${(score < 40) ? 'до Боді тобі ше далеко' : 'привіт, Богдане'}, граєм ше?)`;
+    again.innerHTML = `You scored ${(score == 1 || score == 0) ? '' : score}, ${(score < 40) ? 'Ohh, you are still a freshman' : 'You strong enough'}, shall we play again?)`;
 }
 
 function clicked() {
