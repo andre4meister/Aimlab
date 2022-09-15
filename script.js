@@ -21,7 +21,7 @@ function stop() {
     clearInterval(interval);
     target.style.visibility='hidden';
     again.style.visibility="visible";
-    again.innerHTML = `You scored ${(score == 1 || score == 0) ? '' : score}, ${(score < 40) ? 'Ohh, you are still a freshman' : 'You strong enough'}, shall we play again?)`;
+    again.innerHTML = `You scored ${(score == 1 || score == 0) ? 'Maybe you should choose other device?' : score}, ${(score < 40) ? 'You are still a freshman' : 'You strong enough'}, shall we play again?)`;
 }
 
 function clicked() {
